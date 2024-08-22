@@ -87,7 +87,7 @@ def hackernews_topstories_word_cloud(
 
     return image_data
 
-@asset(group_name="hackernews", compute_kind="Plot")
+@asset(group_name="hackernews", compute_kind="ABCD")
 def example_1(
     context: OpExecutionContext, hackernews_topstories: pd.DataFrame
 ) -> bytes:
